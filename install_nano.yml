@@ -1,0 +1,9 @@
+---
+  - name: Playbook
+    hosts: all
+    become: yes
+    tasks:
+      - name: Ensure nano is at the latest version
+        apt:
+          name: nano
+          state: latest
