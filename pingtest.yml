@@ -4,4 +4,9 @@
   gather_facts: false
   remote_user: ubuntu
   tasks:
-    - ping:
+    - name: Ping task
+      ping:
+
+    - name: Debug task
+      debug:
+        msg: "Francis {{ dev_users['francis']['ssh_pubkey'] }}"

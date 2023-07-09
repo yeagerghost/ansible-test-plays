@@ -1,0 +1,35 @@
+---
+- name: Configure user on Ubuntu
+  hosts: all
+  become: yes
+  
+  vars:
+    john_public_key: "<john_public_key_contents>"
+
+  tasks:
+    - name: Create user John
+      user:
+        name: john
+        createhome: yes
+        shell: /bin/bash
+
+    - name: Add John's public key
+      authorized_key:
+        user: john
+        key: "{{ john_public_key }}"
+        state: present
+
+    - name: Add John to the admin sudo group
+      user:
+        name: john
+        groups: admin
+        append: yes
+
+    - name: Configure sudo settings for John
+      lineinfile:
+        dest: /etc/sudoers
+        line: "john ALL=(ALL) NOPASSWD:ALL"
+        validate: visudo
+
+    - name: Reload sudo configuration
+      command: visudo -c
