@@ -22,7 +22,8 @@
         name: "{{ dev_user }}"
         groups: admin
         append: yes
-
+    
+    #https://stackoverflow.com/questions/46720411/is-it-safe-to-edit-etc-sudoers-with-the-ansible-lineinfile-module
     - name: Configure sudo settings for dev user
       lineinfile:
         dest: /etc/sudoers
