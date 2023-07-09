@@ -2,33 +2,33 @@
 - name: Configure user on Ubuntu
   hosts: all
   become: yes
-  
+  remote_user: ubuntu
   vars:
-    john_public_key: "<john_public_key_contents>"
-
+    dev_user: 'francis'
+  
   tasks:
-    - name: Create user John
+    - name: Create dev user with admin priviliges
       user:
-        name: john
+        name: "{{ dev_user }}"
         createhome: yes
         shell: /bin/bash
 
-    - name: Add John's public key
+    - name: Add dev user's public key
       authorized_key:
-        user: john
-        key: "{{ john_public_key }}"
+        user: "{{ dev_user }}"
+        key: "{{ lookup('vars', dev_user['ssh_pubkey'] }}"
         state: present
 
-    - name: Add John to the admin sudo group
+    - name: Add dev user to the admin sudo group
       user:
-        name: john
+        name: "{{ dev_user }}"
         groups: admin
         append: yes
 
-    - name: Configure sudo settings for John
+    - name: Configure sudo settings for dev user
       lineinfile:
         dest: /etc/sudoers
-        line: "john ALL=(ALL) NOPASSWD:ALL"
+        line: "{{ dev_user }} ALL=(ALL) NOPASSWD:ALL"
         validate: visudo
 
     - name: Reload sudo configuration
