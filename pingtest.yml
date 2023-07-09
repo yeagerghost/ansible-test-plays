@@ -4,11 +4,11 @@
   gather_facts: false
   remote_user: ubuntu
   vars:
-    user: 'francis'
+    dev_user: 'francis'
   tasks:
     - name: Ping task
       ping:
 
     - name: Debug task 1
       debug: 
-        msg="{{ lookup('vars',user)['ssh_pubkey'] }}"
+        msg="{{ lookup('vars',dev_user)['ssh_pubkey'] }}"
