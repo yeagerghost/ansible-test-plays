@@ -29,7 +29,7 @@
       lineinfile:
         dest: /etc/sudoers
         line: "{{ dev_user }} ALL=(ALL) NOPASSWD:ALL"
-        validate: visudo
+        validate: '/usr/sbin/visudo -cf %s'
 
     - name: Reload sudo configuration
       command: visudo -c
