@@ -16,7 +16,7 @@
     - name: Add dev user's public key
       authorized_key:
         user: "{{ dev_user }}"
-        key: "{{ lookup('vars', dev_user['ssh_pubkey'] }}"
+        key: "{{ lookup('vars', dev_user)['ssh_pubkey'] }}"
         state: present
 
     - name: Add dev user to the admin sudo group
