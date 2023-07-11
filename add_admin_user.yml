@@ -1,6 +1,6 @@
 ---
 - name: Configure user on Ubuntu
-  hosts: specify-in-parameter
+  hosts: jonathan-ec2
   become: yes
   remote_user: ubuntu
   

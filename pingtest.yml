@@ -1,6 +1,6 @@
 ---
 
-#- hosts: specify-in-parameter
+- hosts: jonathan-ec2
   gather_facts: false
   remote_user: ubuntu
   tasks:
