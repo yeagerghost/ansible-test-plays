@@ -1,6 +1,6 @@
 ---
 
-- hosts: specify-in-parameter
+#- hosts: specify-in-parameter
   gather_facts: false
   remote_user: ubuntu
   tasks:
