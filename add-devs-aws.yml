@@ -1,6 +1,6 @@
 ---
 - name: Configure users on Ubuntu
-  hosts: client1
+  hosts: qa2-ec2
   remote_user: ubuntu
   become: yes
 
