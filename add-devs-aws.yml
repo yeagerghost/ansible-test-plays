@@ -1,6 +1,7 @@
 ---
 - name: Configure users on Ubuntu
   hosts: client1
+  remote_user: ubuntu
   become: yes
 
   vars_files:
