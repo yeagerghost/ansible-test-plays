@@ -6,10 +6,7 @@ users:
   - username: dwenglaw
     firstname: Denys
     lastname: Weng-Law
-    ssh_key: 
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPETNFbLi+UkxDTSNqJSrDFqmX8pjX1S4WQpwaniEIWq denys.wenglaw@audiokinetic.com
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJDPdasRfhli533oVwuFlr2aYE7yrc/YkG9TEbdxc1e dwenglaw@akm-dwengla-01
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMHj5LuA2XOpjzSNUtH/w/bqR8uTNln0n5kS12xHfcJ dwenglaw@akm-dwengla-01
+    ssh_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMHj5LuA2XOpjzSNUtH/w/bqR8uTNln0n5kS12xHfcJ dwenglaw@akm-dwengla-01
   - username: jferrari
     firstname: Joelle
     lastname: Ferrari
