@@ -1,6 +1,6 @@
 ---
 - name: Configure users on Ubuntu
-  hosts: qa2-ec2
+  hosts: kierk-ec2
   remote_user: ubuntu
   become: yes
 
