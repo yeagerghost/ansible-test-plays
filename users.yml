@@ -1,0 +1,37 @@
+users:
+  - username: jparent
+    firstname: Jonathan
+    lastname: Parent
+    ssh_key: 
+      -  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsKkUwCe2DKoovD5AUaRCmv8uQGeZleoMEjHpDhOH+rNpHQFtLkGOiiTs/P5+xp76z6JqkZryfUXZ3ElGn1pwmQNMNSJf66buzVDJN/jR/qSyaS0B0SlRwfnGYD0VoE6OAMV6jZJ7RD5ZVfeOBnpZEvyDRPJ3ys7MJ5X0Ewb+guhb2eiN9PGgKNXjEv3KMLgXakgm3RTrl2XRP6pqTSvblxCMc2rbegJIr3bGrWljMHqGimvhMFKbqDctapCjnifPhDmxmXf7q92/ymhqGBsV6j1K+QJwSHqm0QqRN/7h9Mh3VgrycCEai/LX1p3VnkBkfqS0C3g/NjBO8XKQLM3Jp jparent@PC-JPARENT"
+  - username: dwenglaw
+    firstname: Denys
+    lastname: Weng-Law
+    ssh_key: 
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPETNFbLi+UkxDTSNqJSrDFqmX8pjX1S4WQpwaniEIWq denys.wenglaw@audiokinetic.com"
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJDPdasRfhli533oVwuFlr2aYE7yrc/YkG9TEbdxc1e dwenglaw@akm-dwengla-01"
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMHj5LuA2XOpjzSNUtH/w/bqR8uTNln0n5kS12xHfcJ dwenglaw@akm-dwengla-01"
+  - username: jferrari
+    firstname: Joelle
+    lastname: Ferrari
+    ssh_key: 
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOVVgrZ+o+u0b9MSuih6+i/KVZSmVX/ER/5nKHTyju21 jferrari@audiokinetic.com"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgTPCa4AFGit0L+RspTdeINifMulqxkTmkiXIxCTAeG4U9rSPTOP92Qp6Ra58fDaWZhhQCry56o8jyS3+ku6ICd1JIwivWIML0AiLBhZ561dAfzP0s0LtDxpiaxpvoRh6+weFscBMpMnlTi44RNKpsMWqzhumLK7RnJ5JhGL0CZG/BLt+noc2QROSUWmMoeFD2pBKwxQ/afR02qFccQpkU5eNfQjD0GegBI9aP6pmQZwLadPxylVqATe0D6DyS6cKRtulPkwn2SAa89kbh6J+FFyG++cYDx/Y2E6chOhP0C3pznsI5p5wwYFLI+Dl2FZ8ETbpH5mAC2KXXoK5JPCfF kmcneil@PC-KMCNEIL"
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9FjjmUha5kE32j3H7SySOcTe9wY9YQjycEHTTRQK2azQkCpYBm1M+Vb6ZBj/OXedVI7oV6XwelJqIv+Vn0S+EcIjAS97znDAlfHF/Cjv02kROOq0xWxVLPHyg466+vvtV19foVS6CB/FzrlgKMl1hmKDFKyjx2dK6nWQEZYCQgGhIvdheq3IsnADF1OHndMkuytluHxQKaelXze5UNbJh93uEYdd+HEjFFjNc46Kvb9ZlPC+BgO3QNBm7paaz7SepSSI23m/Q4oZtmBbQv2FlSxK5DeYyzei5eOVZ6uSLStQDZJjkA5i6xBkzI3Yzrz0Gt+dYeZmlHPz0i72JBDjmUJkbrBDIighQMbx2c9uHnP35UzYNL9JZIiNOlnOsWJ0laKb9weJC3XhQZuy5+cR4xsKMFSE3KGEOroE6GdBkJt9NgCDPeBJFVN9ECIYbtmYUy+sJ9f/usjT5L81F2wXbLp5Uqy/zCW7z3cGyKYyK1ORF0H52fYe0CYbRYw3CPDU= kmcneil@akm-kmcneil-01"
+  - username: jdesrosiers
+    firstname: Julien
+    lastname: Desrosiers
+    ssh_key:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN6ekChWXbIUZrQgc6/+y07uJLYHcR7V33DIm5xcvSO8 jdesrosiers@akm-jdesros-01"
+  - username: kmcneil
+    firstname: Kirk
+    lastname: McNeil
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgTPCa4AFGit0L+RspTdeINifMulqxkTmkiXIxCTAeG4U9rSPTOP92Qp6Ra58fDaWZhhQCry56o8jyS3+ku6ICd1JIwivWIML0AiLBhZ561dAfzP0s0LtDxpiaxpvoRh6+weFscBMpMnlTi44RNKpsMWqzhumLK7RnJ5JhGL0CZG/BLt+noc2QROSUWmMoeFD2pBKwxQ/afR02qFccQpkU5eNfQjD0GegBI9aP6pmQZwLadPxylVqATe0D6DyS6cKRtulPkwn2SAa89kbh6J+FFyG++cYDx/Y2E6chOhP0C3pznsI5p5wwYFLI+Dl2FZ8ETbpH5mAC2KXXoK5JPCfF kmcneil@PC-KMCNEIL"
+  - username: obeaudry
+    firstname: Olivier
+    lastname: Beaudry
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMYtmzsJwE7Vd/6rV2vbsef45onZMEBHH4s8+UHMC0KKHELHjuEX32mjDc48DrqknEWCY5JBmo4Taqf/yf2WHqIWH/a35yR6oGQclitQOjF6b5eRFpCr5zKfm5y4gYk1S/ck4zInYtFOx35X7ZK/QAs0jo2in5zRwQXRg2G9f+NCgky0W9LomKn2sbwpvQhrkYg6l7UsPlNPdob3ehStxzDoQZEYnVldum/zQ50PsFuKQ/A1h3FL1t33weJ18Xd6sI9+jI5Cr7+UxFkNU6p6S23bbOB5Ty38XWAaU3es25+7ImqgEqyujXJbYIjB9KjoAJkXnO7M18F5BbDxoXbw7ORu1uoZ8vWUGU11G9U4izeAiSX9HzsLo8Z/bxL47rwsj4MA9cb30We8c29CrNXlkUqvIaR83x5TyIy+Uw9VSCv3PcEeIWvesnvd45jxLWQ8XRctFlT/6slIOcKTSXR9wyU4Z07vPNOeR3YiET3yG7NxMohBF8lkTGk5b61crK/8M= obeaudry@audiokinetic.com"
+
+

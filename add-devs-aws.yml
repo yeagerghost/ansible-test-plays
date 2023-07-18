@@ -1,0 +1,41 @@
+---
+- name: Configure users on Ubuntu
+  hosts: client1
+  become: yes
+
+  vars_files:
+    - users.yml
+
+  tasks:
+    - name: Create users
+      user:
+        name: "{{ item.username }}"
+        comment: "{{ item.firstname }} {{ item.lastname }}"
+        createhome: yes
+        shell: /bin/bash
+      with_items: "{{ users }}"
+
+    - name: Add SSH keys for users
+      authorized_key:
+        user: "{{ item.username }}"
+        key: "{{ item.ssh_key }}"
+        state: present
+      with_items: "{{ users }}"
+
+    - name: Add users to the admin sudo group
+      user:
+        name: "{{ item.username }}"
+        groups: admin
+        append: yes
+      with_items: "{{ users }}"
+
+    #https://stackoverflow.com/questions/46720411/is-it-safe-to-edit-etc-sudoers-with-the-ansible-lineinfile-module
+    - name: Configure sudo settings for users
+      lineinfile:
+        dest: /etc/sudoers
+        line: "{{ item.username }} ALL=(ALL) NOPASSWD:ALL"
+        validate: '/usr/sbin/visudo -cf %s'
+      with_items: "{{ users }}"
+
+    - name: Reload sudo configuration
+      command: visudo -c
