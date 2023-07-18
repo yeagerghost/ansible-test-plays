@@ -2,8 +2,7 @@ users:
   - username: jparent
     firstname: Jonathan
     lastname: Parent
-    ssh_key: 
-      -  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsKkUwCe2DKoovD5AUaRCmv8uQGeZleoMEjHpDhOH+rNpHQFtLkGOiiTs/P5+xp76z6JqkZryfUXZ3ElGn1pwmQNMNSJf66buzVDJN/jR/qSyaS0B0SlRwfnGYD0VoE6OAMV6jZJ7RD5ZVfeOBnpZEvyDRPJ3ys7MJ5X0Ewb+guhb2eiN9PGgKNXjEv3KMLgXakgm3RTrl2XRP6pqTSvblxCMc2rbegJIr3bGrWljMHqGimvhMFKbqDctapCjnifPhDmxmXf7q92/ymhqGBsV6j1K+QJwSHqm0QqRN/7h9Mh3VgrycCEai/LX1p3VnkBkfqS0C3g/NjBO8XKQLM3Jp jparent@PC-JPARENT"
+    ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsKkUwCe2DKoovD5AUaRCmv8uQGeZleoMEjHpDhOH+rNpHQFtLkGOiiTs/P5+xp76z6JqkZryfUXZ3ElGn1pwmQNMNSJf66buzVDJN/jR/qSyaS0B0SlRwfnGYD0VoE6OAMV6jZJ7RD5ZVfeOBnpZEvyDRPJ3ys7MJ5X0Ewb+guhb2eiN9PGgKNXjEv3KMLgXakgm3RTrl2XRP6pqTSvblxCMc2rbegJIr3bGrWljMHqGimvhMFKbqDctapCjnifPhDmxmXf7q92/ymhqGBsV6j1K+QJwSHqm0QqRN/7h9Mh3VgrycCEai/LX1p3VnkBkfqS0C3g/NjBO8XKQLM3Jp jparent@PC-JPARENT
   - username: dwenglaw
     firstname: Denys
     lastname: Weng-Law
